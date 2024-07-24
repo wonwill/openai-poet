@@ -27,4 +27,3 @@ if st.button('시 작성 요청하기'):
         result = chat_model.predict(content + "에 대한 시를 써줘") #invoke는 줄바꿈이 안됨
         # result = llm.predict("write a poem about " + content + ": ")
         st.write(result) #문자 그 자체 또는 결과값이 출력됨.
-'''
