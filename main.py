@@ -17,6 +17,13 @@ if st.button('시 작성 요청하기'):
 
 import streamlit as st
 from langchain_openai import ChatOpenAI
+
+#claude solution
+import subprocess
+def install_package(package):
+    subprocess.check_call([sys.executable, "-m", "pip", "install", package])
+install_package('langchain-openai')
+
 chat_model = ChatOpenAI()
 
 st.title('인공지능 시인')
