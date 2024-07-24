@@ -1,3 +1,5 @@
+sys
+subprocess
 langchain
 langchain-openai
 openai
