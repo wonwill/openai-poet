@@ -17,9 +17,11 @@ if st.button('시 작성 요청하기'):
 
 import streamlit as st
 #claude solution
+import sys
 import subprocess
 def install_package(package):
-    subprocess.check_call([sys.executable, "-m", "pip", "install", package])
+    # subprocess.check_call([sys.executable, "-m", "pip", "install", package])
+    subprocess.check_call([sys.executable, "pip3", "install", package])
 install_package('langchain-openai')
 
 from langchain_openai import ChatOpenAI
